@@ -1,12 +1,11 @@
-weight = float(input("Weight"))
+weight = float(input("Pls Enter Weight: "))
 responds = input("(K)g or (L)bs:")
 
-lower_Responds = responds.lower()
-if lower_Responds == ('g'):
-    grams = weight * 1000
-    print(grams)
-elif lower_Responds == ('l'):
-    pounds = weight * 2.20462
-    print(pounds)
+if responds.lower() == ('g'):
+    grams = weight / 0.45
+    print("Your weight in kilograms is: " + str(grams))
+elif responds.lower() == ('l'):
+    pounds = weight * 0.45
+    print("Your weight in pounds is: " + str(pounds))
 
 else: print("you entered a wrong character")
